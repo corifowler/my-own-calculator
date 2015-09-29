@@ -16,6 +16,9 @@
   width: 30px;
 }
 
-.button .divide, .multiply, .subtract, .add {
+.button .divide,
+.multiply,
+.subtract, 
+.add {
   background: #83C178;
 }
