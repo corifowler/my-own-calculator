@@ -1,0 +1,21 @@
+.container {
+  margin: 50px;
+}
+
+.typebox {
+  height: 35px;
+  width: 98px;
+  display: inline-block;
+  background: #65B356;
+  margin-bottom: -12px;
+}
+
+.button {
+  background: #65B356;
+  padding: 10px;
+  width: 30px;
+}
+
+.button .divide, .multiply, .subtract, .add {
+  background: #83C178;
+}
