@@ -18,6 +18,7 @@ var subtraction = function () {
 
 // Variables
 
+var clear = document.querySelector('#c');
 var numZero = document.querySelector('#numz');
 var numOne = document.querySelector('#num1');
 var numTwo = document.querySelector('#num2');
@@ -32,59 +33,62 @@ var divide = document.querySelector('#div');
 var addit = document.querySelector('#add');
 var subtr = document.querySelector('#sub');
 var multipl = document.querySelector('#mult');
-var expressionP1 = document.querySelector('#type1');
+var equals = document.querySelector('#eq');
+var typeBox = document.querySelector('#type1');
+
+var firstInput, secondInput;
 
 // Pushing Number's Buttons - Select a Number
 
 var showNumZero = function () {
   var numberZero = Number(numZero.textContent);
-  expressionP1.textContent = numberZero;
+  typeBox.textContent = numberZero;
 };
 
  var showNumOne = function () {
   var numberOne = Number(numOne.textContent);
-  expressionP1.textContent = numberOne;
+  typeBox.textContent = numberOne;
 };
 
 var showNumTwo = function () {
   var numberTwo = Number(numTwo.textContent);
-  expressionP1.textContent = numberTwo;
+  typeBox.textContent = numberTwo;
 };
 
 var showNumThree = function () {
   var numberThree = Number(numThree.textContent);
   console.log(numberThree);
-  expressionP1.textContent = numberThree;
+  typeBox.textContent = numberThree;
 };
 
 var showNumFour = function () {
   var numberFour = Number(numFour.textContent);
-  expressionP1.textContent = numberFour;
+  typeBox.textContent = numberFour;
 };
 
 var showNumFive = function () {
   var numberFive = Number(numFive.textContent);
-  expressionP1.textContent = numberFive;
+  typeBox.textContent = numberFive;
 };
 
 var showNumSix = function () {
   var numberSix = Number(numSix.textContent);
-  expressionP1.textContent = numberSix;
+  typeBox.textContent = numberSix;
 };
 
 var showNumSeven = function () {
   var numberSeven = Number(numSeven.textContent);
-  expressionP1.textContent = numberSeven;
+  typeBox.textContent = numberSeven;
 };
 
 var showNumEight = function () {
   var numberEight = Number(numEight.textContent);
-  expressionP1.textContent = numberEight;
+  typeBox.textContent = numberEight;
 };
 
 var showNumNine = function () {
   var numberNine = Number(numNine.textContent);
-  expressionP1.textContent = numberNine;
+  typeBox.textContent = numberNine;
 };
 
 
@@ -103,14 +107,44 @@ num9.addEventListener('click', showNumNine);
 
 var showMultiplication = function () {
   var multiplop = multipl.textContent;
-  expressionP1.textContent = multiplop;
+  typeBox.textContent = multiplop;
+};
+
+var showDivision = function () {
+  var divop = divide.textContent;
+  typeBox.textContent = divop;
+};
+
+var showAddition = function () {
+  var addop = addit.textContent;
+  typeBox.textContent = addop;
+};
+
+var showSubtraction = function () {
+  var subop = subtr.textContent;
+  typeBox.textContent = subop;
 };
 
 mult.addEventListener('click', showMultiplication);
+div.addEventListener('click', showDivision);
+add.addEventListener('click', showAddition);
+sub.addEventListener('click', showSubtraction);
 
+// Clear Button
 
+var clearAll = function () {
+  typeBox.textContent = null;
+};
 
+c.addEventListener('click', clearAll);
 
+// Evaluate the Statement (hopefully)
+
+// eq.addEventListener('click', function() {
+//   secondInput = typeBox.textContent;
+//   var calculate = Number(firstInput.value) + operatorSelector + Number(secondInput.value);
+//   typeBox.textContent = calculate;
+// };);
 
 
 
